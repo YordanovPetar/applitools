@@ -1,0 +1,38 @@
+Selectors
+
+CSS Selectors:
+
+div.site-wrapper[style]
+a[data-zci-link='images']
+div.result
+div[class*='result']
+div.result--more
+div.result:not(.result--more)
+div.result:nth-child(3)
+div.foot
+div.zcm-wrap-wrap a[data-zci-link='web'] span
+
+XPaths
+//html/body
+//div//*
+//*
+//li[@class='zcm__item']
+//img[@witdth<100 and @height<100]
+//img[@witdth<50][@height<20]
+//input[@name='q' or @id='search_form_input']
+//div[contains(@class,'module__body')]
+//div[starts-with(@class, 'result')]
+//a[not(contains(@class, 'header'))]
+
+Advanced XPaths
+//div[contains(@class, 'serp__result')][contains(., 'melanoleuca')]
+//div[contains(@class, 'serp__result')][not(contains(., 'melanoleuca'))]
+(//div[contains(@class, 'serp')])[3]
+//a[.//img]
+//a[contains(@class, 'zcm__link')][preceding::a[@data-zci-link='web']]
+//a[contains(@class, 'zcm__link')][following::a[@data-zci-link='videos']]
+
+Locators:
+By.linkText - //a[.='Some text')]
+By.partialLinkText - //a[contains(., 'text')]
+By.tagName - //a
